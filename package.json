@@ -1,7 +1,7 @@
 {
-  "name": "@seajhawk/lmstudio-mcp",
-  "version": "0.1.0",
-  "description": "MCP server for LM Studio - manage models, load/unload, and configure settings",
+  "name": "@porpam82/lmstudio-mcp",
+  "version": "0.2.0",
+  "description": "MCP server for LM Studio - manage models, load/unload, and configure settings (stdio + HTTP)",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -21,12 +21,14 @@
     "ai",
     "llm"
   ],
-  "author": "seajhawk",
+  "author": "seajhawk, porpam82",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.4"
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "express": "^4.21.2"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/node": "^22.10.2",
     "typescript": "^5.7.2"
   },
